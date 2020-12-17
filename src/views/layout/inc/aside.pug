@@ -1,0 +1,13 @@
+block aside
+	aside(class='bg-gray-800 content-center h-screen py-4 overflow-y-auto w-12 lg:w-64 md:w-20 ')
+		div.flex.justify-between.px-2.my-2
+			h3(class=' text-white font-bold hidden sm:hidden lg:block') Chats
+			div.w-20.flex.items-center.justify-end
+				include svg.pug
+
+		ul.list-none
+			- for(var x =0; x <= 5; x++)
+				li(class= x === 0 ? "bg-gray-900 mb-1 p-2" : 'mb-1 p-2')
+					a(class='flex items-center text-white justify-center lg:justify-start' href="")
+						img(class='rounded-full w-5 h-5 md:w-10 md:h-10' src="../img/p1.jpg", width='180' height='180' alt="")
+						span(class='hidden lg:block mx-3 ') Boudjahfa Lakhder

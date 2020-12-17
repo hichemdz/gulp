@@ -1,0 +1,22 @@
+.group:hover .group-hover\:block {
+  display: block;
+}
+.odd\:flex-row-reverse:nth-child(odd){
+	flex-direction: row-reverse;
+}
+.inner_chat_content{
+	max-height: 96vh !important;
+}
+
+.bottom-4{
+	bottom: 40px;
+}
+
+.intro{
+/* min-height: 84px ; */
+}
+
+.inner_user_photo{
+	width: 100px;
+	height: 100px;
+}

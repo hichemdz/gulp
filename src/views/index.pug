@@ -1,0 +1,21 @@
+extends layout/base.pug
+
+block content
+	.container.bg-gray-200.max-h-screen.overflow-y-auto.m-auto.p-3(class='grid gap-1 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-1')
+		-for(var x=0; x<2; x++)
+			.flex.mb-3.bg-white
+				.user_img.flex.p-3.items-center
+					span.relative.inner_user_photo.block.justify-center.flex.items-center.p-1.rounded-full.bg-gray-300 
+						p.font-bold H
+						img.hidden.absolute.top-0.left-0(class='rounded-full w-full' src="../img/p1.jpg", width='180' height='180' alt="")
+				.user_info.py-3.flex.flex-col.items-around
+					.flex.mb-3
+						//- span.mr-2.font-serif HICHEM
+						span.mr-2.font-mono HICHEM
+						span.mr-2.text-red-800 16
+						span.bg-green-400.w-2.h-2.rounded-full
+					.intro
+						p.font-mono.text-sm.text-gray-500 hello hichem how are i hope your fine
+					//- .user_info_footer
+					//- 	span.p-2.bg-green-300.mr-2 us 
+					//- 	span.p-2.bg-green-300 ar	
